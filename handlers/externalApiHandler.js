@@ -4,6 +4,8 @@ module.exports = (() => {
   const externalApiMethods = require("../apiMethods/externalApiMethods");
   const zprApiMethods = require("../apiMethods/zprMethods");
   const qrCodeMethods = require("../apiMethods/qrCodeMethods");
+  
+
 
   return {
     Login: (req, res) => externalApiMethods.Login(req.body, res),
@@ -18,5 +20,6 @@ module.exports = (() => {
     reportZQA32: (req, res) => externalApiMethods.reportZQA32(req.body, res),
     ZPRDID: (req, res) => externalApiMethods.ZPRDID(req.body, res),
     typeTest: (req, res) => externalApiMethods.typeTest(req.body, res),
+    OrderConfirmation:(req, res) => externalApiMethods.OrderConfirmation(req.body, res),
   };
 })();

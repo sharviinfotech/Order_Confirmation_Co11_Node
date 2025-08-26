@@ -251,5 +251,30 @@ module.exports = (() => {
         res.status(500).json({ error: "Failed to process POST request" });
       }
     },
+     OrderConfirmation:async (body, res) => {
+        try {
+          console.log(
+            "Sending  Post payload to Pr Reject  API:",
+            JSON.stringify(body, null, 2)
+          );
+          const response = await axios.post(
+            config.THIRD_PARTY_API_URL_POST_COOIS_Order_Confirmation,
+            body,
+            {
+              headers: {
+                Authorization: getAuthHeader(),
+              },
+            }
+          );
+          console.log(
+            "PUT Response from PurchaseCreate API:",
+            JSON.stringify(response.data, null, 2)
+          );
+          res.json(response.data);
+        } catch (error) {
+          handleAxiosError(error, "PurchaseCreate");
+          res.status(500).json({ error: "Failed to process PUT request" });
+        }
+      },
   };
 })();

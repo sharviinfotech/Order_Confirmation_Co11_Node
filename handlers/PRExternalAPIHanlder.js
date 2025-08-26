@@ -27,6 +27,8 @@ module.exports = (() => {
 
         //Mb21//
         MatReservation:(req, res) => externalApiMethods.MatReservation(req.body, res),
+        OrderConfirmation:(req, res) => externalApiMethods.OrderConfirmation(req.body, res),
+
        
     };
 })();

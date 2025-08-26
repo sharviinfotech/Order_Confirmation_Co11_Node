@@ -29,6 +29,9 @@ module.exports = (() => {
     //MB21//
 
     router.post('/pr/MB21',externalApiHandler.MatReservation);
+    router.post('/co11/orderconfirmation',externalApiHandler.OrderConfirmation);
+
+
 
 
 
