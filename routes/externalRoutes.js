@@ -15,6 +15,7 @@ module.exports = (() => {
   router.post("/reportZQA32", externalApiHandler.reportZQA32); //pending lot reports
   router.post("/ZPRDID", externalApiHandler.ZPRDID);
   router.post("/typeTest", externalApiHandler.typeTest);
-  router.post('/coois/orderconfirmation',externalApiHandler.OrderConfirmation);
+  router.post('/orderconfirmation/coois',externalApiHandler.Coois);
+  router.post('/orderconfirmationzco11n/co11',externalApiHandler.Co11);
   return router;
 })();

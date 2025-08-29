@@ -34,5 +34,6 @@ module.exports = (() => {
     // THIRD_PARTY_API_URL_POST_ZPRDID: `${baseUrl}/qm/prdid/product?sap-client=400`,
     // THIRD_PARTY_API_URL_POST_TYPE_TEST: `${baseUrl}/qm/type_test/typetest?sap-client=400`,
     THIRD_PARTY_API_URL_POST_COOIS_Order_Confirmation: `${baseUrl}/sipl_pp/coois/porder?sap-client=100`,
+    THIRD_PARTY_API_URL_POST_CO11_Order_Confirmation_ZCO11N: `${baseUrl}/sipl_pp/prod_order/zco11n?sap-client=100`,
   };
 })();

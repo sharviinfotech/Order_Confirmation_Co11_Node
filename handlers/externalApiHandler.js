@@ -20,6 +20,7 @@ module.exports = (() => {
     reportZQA32: (req, res) => externalApiMethods.reportZQA32(req.body, res),
     ZPRDID: (req, res) => externalApiMethods.ZPRDID(req.body, res),
     typeTest: (req, res) => externalApiMethods.typeTest(req.body, res),
-    OrderConfirmation:(req, res) => externalApiMethods.OrderConfirmation(req.body, res),
+    Coois:(req, res) => externalApiMethods.Coois(req.body, res),
+    Co11:(req, res) => externalApiMethods.Co11(req.body, res),
   };
 })();
